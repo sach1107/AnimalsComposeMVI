@@ -37,4 +37,9 @@ object AppModule {
     @DispatchersIO
     fun providesCoroutineDispatcherIo(): CoroutineDispatcher = Dispatchers.IO
 
+    @Provides
+    @Singleton
+    fun providesAnimalRepository(apiService: ApiService): AnimalRepository =
+        AnimalRepositoryImpl(apiService)
+
 }
