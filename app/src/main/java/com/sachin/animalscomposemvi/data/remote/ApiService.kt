@@ -5,6 +5,6 @@ import retrofit2.http.GET
 
 interface ApiService {
 
-    @GET("animals.json")
+    @GET("1ed0f3d7-fc46-4dd9-a476-731d35c9fd65")
     suspend fun getAnimals(): List<Animal>
 }
